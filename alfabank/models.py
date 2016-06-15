@@ -1,5 +1,4 @@
 
-
 class Base(object):
     def __init__(self, payload):
         self._payload = payload
@@ -10,7 +9,7 @@ class Base(object):
     def __getattr__(self, item):
         name = ''.join(map(str.capitalize, item.split('_')))
         name = name[0].lower() + name[1:]
-        return getattr(self._payload, name)
+        return str(getattr(self._payload, name))
 
 
 class NewOrder(Base):
@@ -27,7 +26,7 @@ class OrderStatus(Base):
     """
 
     def is_paid(self):
-        if self.is_successful() and self.order_status == 2:
+        if self.is_successful() and self.order_status == '2':
             return True
         return False
 

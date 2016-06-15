@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions name="MerchantServiceImplService" targetNamespace="http://soap.merchant.api.web.phoenix.bpc.ru/" xmlns:ns1="http://engine.paymentgate.ru/webservices/merchant" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://soap.merchant.api.web.phoenix.bpc.ru/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:import location="MerchantService.wsdl" namespace="http://engine.paymentgate.ru/webservices/merchant">
+    </wsdl:import>
+  <wsdl:binding name="MerchantServiceImplServiceSoapBinding" type="ns1:MerchantService">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="refundOrder">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="refundOrder">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="refundOrderResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="unBindCard">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="unBindCard">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="unBindCardResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerOrder">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="registerOrder">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="registerOrderResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addParams">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="addParams">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addParamsResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paymentOrderBinding">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="paymentOrderBinding">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="paymentOrderBindingResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBindings">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getBindings">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getBindingsResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reverseOrder">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="reverseOrder">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="reverseOrderResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLastOrders">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getLastOrders">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getLastOrdersResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOrderStatusExtended">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getOrderStatusExtended">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getOrderStatusExtendedResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bindCard">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="bindCard">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="bindCardResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="finishThreeDs">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="finishThreeDs">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="finishThreeDsResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerOrderPreAuth">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="registerOrderPreAuth">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="registerOrderPreAuthResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="extendBinding">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="extendBinding">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="extendBindingResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyEnrollment">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="verifyEnrollment">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="verifyEnrollmentResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paymentOrderOtherWay">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="paymentOrderOtherWay">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="paymentOrderOtherWayResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkAuthenticate">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="checkAuthenticate">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="checkAuthenticateResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateWhiteCardList">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="updateWhiteCardList">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateWhiteCardListResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="depositOrder">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="depositOrder">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="depositOrderResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOrderStatus">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getOrderStatus">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getOrderStatusResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLastOrdersForMerchants">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getLastOrdersForMerchants">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getLastOrdersForMerchantsResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paymentOrder">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="paymentOrder">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="paymentOrderResponse">
+        <soap:body namespace="http://engine.paymentgate.ru/webservices/merchant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MerchantServiceImplService">
+    <wsdl:port binding="tns:MerchantServiceImplServiceSoapBinding" name="MerchantServiceImplPort">
+      <soap:address location="https://test.paymentgate.ru/testpayment/webservices/merchant-ws"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
