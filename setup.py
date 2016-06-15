@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 install_requires = [
-    'zeep',
+    'https://github.com/mvantellingen/python-zeep/archive/master.zip',
 ]
 
 tests_require = [
