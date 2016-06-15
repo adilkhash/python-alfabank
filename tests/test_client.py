@@ -15,7 +15,6 @@ WSDL_FILE = os.path.join(os.path.dirname(__file__), 'wsdl', 'Merchant.wsdl').rep
 client = AlfabankSoapClient('test', 'passwd', endpoint='file://%s' % (WSDL_FILE,))
 
 
-
 @responses.activate
 def test_register_order_fault():
 

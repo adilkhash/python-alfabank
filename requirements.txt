@@ -1,1 +1,1 @@
-zeep
+https://github.com/mvantellingen/python-zeep/archive/master.zip

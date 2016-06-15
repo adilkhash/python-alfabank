@@ -18,7 +18,7 @@ setup(
     author_email="adil@khashtamov.com",
     url='https://github.com/adilkhash/python-alfabank',
 
-#    install_requires=install_requires,
+    install_requires=install_requires,
     tests_require=tests_require,
     dependency_links=[
         'git+ssh://git@github.com:mvantellingen/python-zeep.git#egg=zeep=0.10.0.dev0'
