@@ -1,8 +1,8 @@
 from setuptools import find_packages, setup
 
-# install_requires = [
-#     'zeep',
-# ]
+install_requires = [
+    'zeep',
+]
 
 tests_require = [
     'pytest>=2.8.3',
