@@ -1,8 +1,8 @@
 from setuptools import find_packages, setup
 
-install_requires = [
-    'https://github.com/mvantellingen/python-zeep/archive/master.zip',
-]
+# install_requires = [
+#     'zeep',
+# ]
 
 tests_require = [
     'pytest>=2.8.3',
@@ -18,8 +18,11 @@ setup(
     author_email="adil@khashtamov.com",
     url='https://github.com/adilkhash/python-alfabank',
 
-    install_requires=install_requires,
+#    install_requires=install_requires,
     tests_require=tests_require,
+    dependency_links=[
+        'git+ssh://git@github.com:mvantellingen/python-zeep.git#egg=zeep=0.10.0.dev0'
+    ],
     extras_require={'test': tests_require},
     packages=find_packages(),
     include_package_data=True,
